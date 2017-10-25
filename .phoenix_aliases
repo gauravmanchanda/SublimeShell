@@ -1,0 +1,8 @@
+alias ips='iex -S mix phx.server'
+alias mpgc='mix phx.gen.channel'
+alias mpgh='mix phx.gen.html'
+alias mpgj='mix phx.gen.json'
+alias mpgs='mix phx.gen.secret'
+alias mpn='mix phx.new'
+alias mpr='mix phx.routes'
+alias mps='mix phx.server'
