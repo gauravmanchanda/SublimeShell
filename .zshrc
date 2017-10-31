@@ -2,12 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/gmanchanda/.oh-my-zsh
+  export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="bullet-train"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails ruby brew asdf bundler chucknorris docker fasd gem history osx web-search colorize sublime docker capistrano)
+plugins=(git rails ruby asdf bundler docker fasd gem history web-search colorize sublime docker capistrano)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,7 +86,6 @@ source $ZSH/oh-my-zsh.sh
 alias gpo="git push origin"
 alias gpom="git push origin master"
 alias ccat="colorize"
-alias flush="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say Cache Flushed!"
 
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
@@ -94,10 +93,4 @@ alias flush="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say 
 . $HOME/.aliases
 . $HOME/.sh_functions
 
-export PATH=/usr/local/sbin:$PATH
-export HOMEBREW_NO_AUTO_UPDATE=1
-complete -cf _
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-fortune | cowsay
 unsetopt share_history
