@@ -1,0 +1,24 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Crystal",
+		"Elixir",
+		"Elm Language Support",
+		"HTML-CSS-JS Prettify",
+		"Latest Migration",
+		"MarkdownPreview",
+		"Materialize",
+		"Package Control",
+		"Pretty JSON",
+		"Pretty YAML",
+		"RuboCop",
+		"SideBarEnhancements",
+		"SublimeGit",
+		"TOML"
+	]
+}
+
