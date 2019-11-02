@@ -46,9 +46,13 @@ Plug 'jdsimcoe/abstract.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'mhartington/oceanic-next'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
-" Plug 'slim-template/vim-slim.git'
+Plug 'slim-template/vim-slim.git'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plug 'keith/swift.vim'
+Plug 'udalov/kotlin-vim'
+Plug 'jonmorehouse/vim-flow'
 " Plugin 'ludovicchabant/vim-gutentags'
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
@@ -78,6 +82,7 @@ let g:autoformat_autoindent = 0
 let g:autoformat_retab = 0
 let g:autoformat_remove_trailing_spaces = 0
 let NERDTreeShowHidden=1
+let dart_style_guide = 2
 " let g:autoformat_verbosemode=1
 
 " Required for operations modifying multiple buffers like rename.
@@ -86,7 +91,7 @@ set hidden
 nnoremap <leader>tf :NERDTreeFind<cr>
 nnoremap <leader>gd :call CocAction('jumpDefinition')<cr>
 nnoremap <leader>x :!%:p<cr>
-
+:nnoremap <Leader>r :%s/\<<C-r><C-w>\>/
 " Persistent undo
 set undofile
 set undodir=$HOME/.vim/undo
